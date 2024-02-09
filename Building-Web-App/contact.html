@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="navibar">
+      <ul>
+        <li><a href="index.html">Shusrita Venugopal</a></li>
+        <li style="float:right"><a href="about.html">About</a></li>
+        <li style="float:right"><a href="skills.html">Skills</a></li>
+        <li style="float:right"><a href="certification.html">Certifications</a></li>
+        <li style="float:right"><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  <div class="form-container">
+        <h2 class="form-title">Leave a Message</h2>
+        <form class="message-form">
+            <label for="name" class="form-label">Your Name:</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name">
+
+            <label for="message" class="form-label">Message:</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Enter your message"></textarea>
+
+            <button type="submit" class="form-button">Submit</button>
+        </form>
+    </div>
+  <!-- Display saved message -->
+    <div class="message-display">
+        <h2>Saved Message</h2>
+        <p id="savedMessage"></p>
+    </div>
+</body>
+</html>
